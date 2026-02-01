@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourvansh Airen Agarwal | AI & ML Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --text: #e6edf3;
+            --muted: #9da7b3;
+            --accent: #58a6ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 10%;
+            animation: fadeUp 1s ease;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #010409;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 120px;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+        }
+
+        .hero-content h3 {
+            color: var(--accent);
+            margin: 15px 0;
+        }
+
+        .hero-content p {
+            max-width: 600px;
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .btn-group a {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            margin-right: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #000;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--accent);
+        }
+
+        .btn-group a:hover {
+            opacity: 0.85;
+        }
+
+        /* Grid & Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card h4 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #010409;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <strong>Gourvansh</strong>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+            <h1>Gourvansh Airen Agarwal</h1>
+            <h3>BTech Student | CSE (AI & ML) | Problem Solver</h3>
+            <p>
+                AI & ML focused Computer Science student passionate about building intelligent, data-driven solutions
+                using strong foundations in algorithms and programming.
+            </p>
+            <div class="btn-group">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="resume.pdf" class="btn-outline">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a BTech Computer Science student specializing in Artificial Intelligence and Machine Learning with
+            strong fundamentals in Data Structures, Algorithms, and Object-Oriented Programming. I aim to build secure,
+            scalable, and efficient software solutions and am actively preparing for technical roles in software
+            development and AI-driven domains.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">C</div>
+            <div class="card">C++</div>
+            <div class="card">Java</div>
+            <div class="card">Python</div>
+            <div class="card">Data Structures & Algorithms</div>
+            <div class="card">OOPS</div>
+            <div class="card">Algorithms</div>
+            <div class="card">HTML</div>
+            <div class="card">Information Security</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>Online Examination System</h4>
+                <p>Console-based exam management system using C and file handling for student data, exams, and results.
+                </p>
+                <p><b>Tech:</b> C, File I/O</p>
+                <a href="#">View Code</a>
+            </div>
+
+            <div class="card">
+                <h4>Optimal Route Finder</h4>
+                <p>Graph-based algorithm project to compute shortest and optimal paths using Dijkstra’s algorithm.</p>
+                <p><b>Tech:</b> Algorithms, Graphs</p>
+                <a href="#">View Code</a>
+            </div>
+
+            <div class="card">
+                <h4>Image Encrypter & Decrypter</h4>
+                <p>Secure image encryption system ensuring data confidentiality using cryptographic techniques.</p>
+                <p><b>Tech:</b> Information Security</p>
+                <a href="#">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>BTech – CSE (AI & ML)</h4>
+                <p>Focused on Artificial Intelligence, Machine Learning, DSA, and core computer science subjects.</p>
+            </div>
+            <div class="card">
+                <h4>Class 12 – ISC Board</h4>
+                <p>Strong academic foundation in Mathematics and Computer Science.</p>
+            </div>
+            <div class="card">
+                <h4>Class 10 – ISC Board</h4>
+                <p>Developed analytical thinking and problem-solving skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular -->
+    <section id="activities">
+        <h2>Extracurricular Activities</h2>
+        <div class="card">
+            <h4>National Service Scheme (NSS)</h4>
+            <p>
+                Actively participated in social service activities, community development programs, and awareness
+                campaigns, developing leadership, teamwork, and social responsibility.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: gourvanshairenagarwal2497@gmail.com</li>
+            <li>Phone: +91 9389842497</li>
+            <li>GitHub: <a href="#">github.com/yourusername</a></li>
+            <li>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2026 Gourvansh Airen Agarwal | AI & ML Portfolio
+    </footer>
+
+</body>
+
+</html>
